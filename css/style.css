@@ -1,0 +1,88 @@
+body, html {
+  height: 100%;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  background-color: white;
+}
+:root {
+    --fz: 7.8vw;
+}
+@media (max-width:379px) {
+  :root {
+      --fz: 41px;
+  }
+  #ftt{
+    font-size: 14.5px !important;
+  }
+  #arrow{
+    font-size: 75px !important;
+    -webkit-text-stroke: 5.5px white !important;
+  }
+}
+
+@media (min-width:380px) and (max-width: 500px) {
+  :root {
+      --fz: 50px;
+  }
+  #ftt{
+    font-size: 14.5px !important;
+  }
+  #arrow{
+    font-size: 75px !important;
+    -webkit-text-stroke: 5.5px white !important;
+  }
+}
+#cap{
+
+    font-style: italic;
+    font-size:calc((40*var(--fz))/100) !important;
+}
+#t1{
+height: 45%;
+}
+
+#main{
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 7.5vw;
+  font-size: var(--fz);
+
+}
+#arrow{
+  font-size: 95px;
+  -webkit-text-stroke: 7px white;
+  animation: pulse 5s ease infinite alternate;
+}
+#cap{
+  font-size: 20px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+
+}
+#ft {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+#ftt{
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
